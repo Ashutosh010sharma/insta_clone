@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="js/index.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Add this to the head section -->
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Vertical navbar -->
+<div class="flex flex-col bg-white h-screen justify-between top fixed left-0 w-nav-small sm:w-[200px] grid grid-cols-1" id="sidebar">
+    <div class="cols-span-3">
+    <div class="py-4 px-3 mb-4">
+      <div class="flex items-center ml-4">
+        <i class="fa-brands fa-instagram fa-2xl sm:hidden"></i>
+       <img src="images/instagram-wordmark.svg" class="h-[50px] w-[130px] hidden sm:inline-block" alt="">
+      </div>
+    </div>
+  
+    <ul class="flex flex-col bg-white space-y-4 ml-4">
+      <li>
+        <a href="index.html" class="flex items-center text-dark py-2 px-3">
+            <i class="fa-solid fa-house fa-lg "></i>
+          <span class="flex items-center text-dark py-1 px-2  hidden sm:block">Home</span>
+         
+        </a>
+      </li>
+      <li>
+        <a href="search.html" target="_self" class="flex items-center text-dark py-2 px-3">
+            <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+          <span class="flex items-center text-dark py-1 px-2  hidden sm:block">Search</span>
+         
+        </a>
+      </li>
+      <li>
+        <a href="#" class="flex items-center text-dark py-2 px-3">
+            <i class="fa-regular fa-compass fa-lg"></i>
+          <span class="flex items-center text-dark py-1 px-2  hidden sm:block">Explore</span>
+         
+        </a>
+      </li>
+      <li>
+        <a href="#" class="flex items-center text-dark py-2 px-3">
+            <i class="fa-regular fa-circle-play fa-lg"></i>
+          <span class="flex items-center text-dark py-1 px-2  hidden sm:block">Reels</span>
+         
+        </a>
+      </li>
+      <li>
+        <a href="#" class="flex items-center text-dark py-2 px-3">
+            <i class="fa-brands fa-facebook-messenger fa-lg"></i>
+          <span class="flex items-center text-dark py-1 px-2  hidden sm:block">Messages</span>
+         
+        </a>
+      </li>
+      <li>
+        <a href="#" class="flex items-center text-dark py-2 px-3">
+            <i class="fa-regular fa-heart fa-lg"></i>
+          <span class="flex items-center text-dark py-1 px-2  hidden sm:block">Notifications</span>
+         
+        </a>
+      </li>
+      <li>
+        <a href="#" class="flex items-center text-dark py-2 px-3">
+            <i class="fa-regular fa-square-plus fa-lg"></i>
+          <span class="flex items-center text-dark py-1 px-2  hidden sm:block">Create</span>
+         
+        </a>
+      </li>
+      <li>
+        <a href="profile.html" class="flex items-center text-dark py-2 px-3">
+            <div class="md-8 flex rounded-full w-6 h-6" >
+
+                <img class="w-full h-full rounded-full mt-1" src="images/pexels-pixabay-35183.jpg" alt="Avatar">
+                <span class="flex items-center text-dark py-1 px-2  hidden sm:block">Profile</span>
+                <!-- <a href="#" class="text-black hover:text-gray-200">Profile</a> -->
+            </div>
+            
+          
+        </a>
+      </li>
+      <li>
+        <a href="#" class="flex items-center text-dark mt-[50px] px-3">
+            <i class="fa-solid fa-bars fa-xl"></i>
+          <span class="flex items-center text-dark py-1 px-2  hidden sm:block">More</span>
+         
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+<div class="max-w-4xl mx-5 p-10 xl:mx-auto overflow-hidden">
+    <div class="grid grid-cols-4 gap-4">
+        <div class="avatar justify-center">
+            <div>
+                <img src="images/pexels-pixabay-35183.jpg" class="rounded-full w-36 h-36" alt="">
+            </div>
+        </div>
+        <div class="col-span-2">
+            <span class="text-gray-700 text-2xl mr-4">Ashutosh Sharma</span>
+            <div class="cursor-pointer inline text-sm text-gray-700 font-semibold p-1 px-2 border-gray-200 rounded mr-4">Edit Profile</div>
+            <i class="fa-solid fa-gear fa-xl inline"></i>
+            <div class="mt-4 flex">
+                <div><span class="font-semibold mr-1">100</span>Posts</div>
+                <div class="ml-4"><span class="font-semibold mr-1">250</span>Followers</div>
+                <div class="ml-4"><span class="font-semibold mr-1">200</span>Following</div>
+            </div>
+            <div>
+                <div class="pt-3">
+                    <span class="text-lg font-semibold text-gray-700">Ashutosh Sharma</span>
+                </div>
+                <div class="pt-3">
+                    <p class="text-blue-700"> #tailwind #css # website # substring</p>
+                    <p class="font-medium text-blue-700">asdfghjkloiuytrezxcvbnmiuytrqwertyuiolkjhvbnlkjhdfvbnoiuhbnm</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="flex space-x-2 bg-white border-gray-200 p-4 scroll-smooth scrollbar-hide overflow-hidden">
+        <ul class="scroll-container flex space-x-6">
+            <li class="flex flex-col items-center space-y-1">
+                <div class="h-24 w-24 relative bg-gray-300 p-1 rounded-full">
+                    <a  class="block bg-white p-1 rounded-full transform transition hover:-rotate-6">
+                        <img class="h-20 w-24 rounded-full object-fill" src="images/pexels-pixabay-35183.jpg" alt="">
+                    </a>
+                </div>
+                <a href="">You</a>
+            </li>
+            <li class="flex flex-col items-center space-y-1">
+                <div class=" h-24 w-24 bg-gray-300 p-1 rounded-full">
+                    <a  class="block bg-white p-1 rounded-full transform transition hover:-rotate-6">
+                        <img class="h-20 w-24 rounded-full object-fill" src="images/pexels-pixabay-35183.jpg" alt="">
+                    </a>
+                </div>
+                <a href="">You</a>
+            </li>
+            <li class="flex flex-col items-center space-y-1">
+                <div class="h-24 w-24 bg-gray-300 p-1 rounded-full">
+                    <a  class="block bg-white p-1 rounded-full transform transition hover:-rotate-6">
+                        <img class="h-20 w-24 rounded-full object-fill" src="images/pexels-pixabay-35183.jpg" alt="">
+                    </a>
+                </div>
+                <a href="">You</a>
+            </li>
+            <li class="flex flex-col items-center space-y-1">
+                <div class=" h-24 w-24 bg-gray-300 p-1 rounded-full">
+                    <a  class="block bg-white p-1 rounded-full transform transition hover:-rotate-6">
+                        <img class="h-20 w-24 rounded-full object-fill" src="images/pexels-pixabay-35183.jpg" alt="">
+                    </a>
+                </div>
+                <a href="">You</a>
+            </li>
+            <li class="flex flex-col items-center space-y-1">
+                <div class="h-24 w-24 bg-gray-300 p-1 rounded-full">
+                    <a  class="block bg-white p-1 rounded-full transform transition hover:-rotate-6">
+                        <img class="h-20 w-24 rounded-full object-fill" src="images/pexels-pixabay-35183.jpg" alt="">
+                    </a>
+                </div>
+                <a href="">You</a>
+            </li>
+            <li class="flex flex-col items-center space-y-1">
+                <div class="h-24 w-24 bg-gray-300 p-1 rounded-full">
+                    <a  class="block bg-white p-1 rounded-full transform transition hover:-rotate-6">
+                        <img class="h-20 w-24 rounded-full object-fill" src="images/pexels-pixabay-35183.jpg" alt="">
+                    </a>
+                </div>
+                <a href="">You</a>
+            </li>
+            <li class="flex flex-col items-center space-y-1">
+                <div class="h-24 w-24 bg-gray-300 p-1 rounded-full">
+                    <a  class="block bg-white p-1 rounded-full transform transition hover:-rotate-6">
+                        <img class="h-20 w-24 rounded-full object-fill" src="images/pexels-pixabay-35183.jpg" alt="">
+                    </a>
+                </div>
+                <a href="">You</a>
+            </li>
+            <li class="flex flex-col items-center space-y-1">
+                <div class="h-24 w-24 bg-gray-300 p-1 rounded-full">
+                    <a  class="block bg-white p-1 rounded-full transform transition hover:-rotate-6">
+                        <img class="h-20 w-24 rounded-full object-fill" src="images/pexels-pixabay-35183.jpg" alt="">
+                    </a>
+                </div>
+                <a href="">You</a>
+            </li>
+            
+           
+            
+        </ul>
+        
+    </div>
+    <hr class="border-gray-500 mt-6">
+   <div class="flex justify-center gap-10">
+    <button class="focus:border-t border-gray-800 py-4 text-sm font-semibold flex gap-2 text-gray-400 focus:text-gray-600">
+        <i class="fa-solid fa-table-cells mt-1"></i>POSTS</button>
+    <button class="focus:border-t border-gray-800 py-4 text-sm font-semibold flex gap-2 text-gray-400 focus:text-gray-600">
+        <i class="fa-brands fa-youtube  mt-1"></i>REELS</button>
+    <button class="focus:border-t border-gray-800 py-4 text-sm font-semibold flex gap-2 text-gray-400 focus:text-gray-600">
+        <i class="fa-regular fa-bookmark  mt-1"></i></i></i>SAVED</button>
+    <button class="focus:border-t border-gray-800 py-4 text-sm font-semibold flex gap-2 text-gray-400 focus:text-gray-600">
+        <i class="fa-regular fa-id-card  mt-1"></i></i>TAGGED</button>
+   </div>
+   <div class="grid grid-cols-3 gap-2 overflow-hidden" id="grid1">
+    <!-- <div class="relative group cursor-pointer"> -->
+        <div class="relative h-[250px] ">
+            <img src="images/img1.webp" alt="" class="object-cover w-full h-full">
+            <div class="absolute top-0 left-0 w-full h-full bg-black opacity-0 group-hover:opacity-30 flex items-center justify-center transition-opacity duration-300">
+                <!-- Icons appear on hover -->
+                <div class="space-x-2 text-white">
+                    <i class="fa-solid fa-heart"></i>
+                  <span>3</span>
+                </div>
+                <div class="space-x-2 text-white">
+                    <i class="fa-solid fa-comment fa-rotate-270"></i>
+                  <span>5</span>
+                </div>
+            </div>
+        </div>
+        <div class="relative h-[250px] ">
+            <img src="images/img2.jpeg" alt="" class="object-cover w-full h-full">
+        </div>
+        <div class="relative h-[250px] ">
+            <img src="images/img3.jpeg" alt="" class="object-cover w-full h-full">
+        </div>
+        <div class="relative h-[250px] ">
+            <img src="images/img4.jpeg" alt="" class="object-cover w-full h-full">
+        </div>
+        <div class="relative h-[250px] ">
+            <img src="images/img5.jpeg" alt="" class="object-cover w-full h-full">
+        </div>
+        <div class="relative h-[250px] ">
+            <img src="images/img6.jpeg" alt="" class="object-cover w-full h-full">
+        </div>
+        <div class="relative h-[250px] ">
+            <img src="images/img7.webp" alt="" class="object-cover w-full h-full">
+        </div>
+        <div class="relative h-[250px] ">
+            <img src="images/img8.jpeg" alt="" class="object-cover w-full h-full">
+        </div>
+        <div class="relative h-[250px] ">
+            <img src="images/img9.jpeg" alt="" class="object-cover w-full h-full">
+        </div>
+        <!-- <div class="absolute top-0 opacity-0 group-hover:opacity-100 left-1/2 -translate-x-1/2 w-full h-full bg-black-rgba flex text-white justify-center items-center">
+            <div class="space-x-1">
+                <i class="fa-solid fa-heart"></i>
+                <span>3</span>
+            </div>
+            <div class="space-x-1">
+                <i class="fa-solid fa-heart"></i>
+                <span>1</span>
+            </div>
+        </div> --><!-- </div> -->
+    </div>
+
+
+
+</div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+  
+    
+</body>
+</html>

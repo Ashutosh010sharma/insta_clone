@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/index.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <nav class="bg-white p-4 shadow-md h-screen fixed left-0 top-0">
+    <!-- Navigation links, user profile, etc. -->
+    <!-- Instagram Logo -->
+    <div class="py-4 px-3 mb-4">
+      <div class="flex items-center ml-0">
+        <i class="fa-brands fa-instagram fa-2xl"></i>
+       <img src="images/instagram-wordmark.svg" class="h-[50px] w-[130px] hidden sm:inline-block pl-2" alt="">
+      </div>
+    </div>
+  
+<!-- Navigation Links -->
+<ul class="space-y-4 w-[230px]">
+<li>
+<a href="#" class="flex items-center text-dark py-2 px-3">
+    <i class="fa-solid fa-house fa-lg "></i>
+  <span class="flex items-center text-dark py-1 px-2  hidden sm:block">Home</span>
+ 
+</a>
+</li>
+<li>
+<a href="search.html" target='_self' class="flex items-center text-dark py-2 px-3">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  <span class="flex items-center text-dark py-1 px-2  hidden sm:block">Search</span>
+ 
+</a>
+</li>
+<li>
+<a href="#" class="flex items-center text-dark py-2 px-3">
+    <i class="fa-regular fa-compass fa-lg"></i>
+  <span class="flex items-center text-dark py-1 px-2  hidden sm:block">Explore</span>
+ 
+</a>
+</li>
+<li>
+<a href="#" class="flex items-center text-dark py-2 px-3">
+    <i class="fa-regular fa-circle-play fa-lg"></i>
+  <span class="flex items-center text-dark py-1 px-2  hidden sm:block">Reels</span>
+ 
+</a>
+</li>
+<li>
+<a href="#" class="flex items-center text-dark py-2 px-3">
+    <i class="fa-brands fa-facebook-messenger fa-lg"></i>
+  <span class="flex items-center text-dark py-1 px-2  hidden sm:block">Messages</span>
+ 
+</a>
+</li>
+<li>
+<a href="#" class="flex items-center text-dark py-2 px-3">
+    <i class="fa-regular fa-heart fa-lg"></i>
+  <span class="flex items-center text-dark py-1 px-2  hidden sm:block">Notifications</span>
+ 
+</a>
+</li>
+<li>
+<a href="#" class="flex items-center text-dark py-2 px-3">
+    <i class="fa-regular fa-square-plus fa-lg"></i>
+  <span class="flex items-center text-dark py-1 px-2  hidden sm:block">Create</span>
+ 
+</a>
+</li>
+<li>
+<a href="profile.html" target="_self" class="flex items-center text-dark py-2 px-3">
+    <div class="md-8 rounded-full flex w-6 h-6" >
+        <img class="w-full h-full rounded-full" src="images/pexels-pixabay-35183.jpg" alt="Avatar">
+        <span class="ml-2 items-center text-dark   hidden sm:block">Profile</span>
+        <!-- <a href="#" class="text-black hover:text-gray-200">Profile</a> -->
+    </div>
+    
+  
+</a>
+</li>
+<li>
+<a href="#" class="flex items-center text-dark mt-[250px] px-3">
+    <i class="fa-solid fa-bars fa-xl"></i>
+  <span class="flex items-center text-dark py-1 px-2  hidden sm:block">More</span>
+ 
+</a>
+</li>
+</ul>
+</nav>
+
+
+    <div class="bg-gray-100 min-h-screen grid grid-cols-12 pl-[260px]">
+      
+      
+        <!-- Main content area -->
+        <main class="p-4 w-full col-span-10 col-start-0">
+          <!-- Story section -->
+          <section class="flex space-x-4 mb-4 scroll-container   overflow-auto">
+            <ul class="flex flex-nowrap space-x-6">
+              <li class="flex flex-col items-center space-y-1">
+                  <div class="h-24 w-24 relative bg-gradient-to-tr from-yellow-400 to-red-500 p-1 rounded-full">
+                      <a  class="block bg-white p-1 rounded-full transform transition hover:-rotate-6">
+                          <img class="h-20 w-24 rounded-full object-fill" src="images/pexels-pixabay-35183.jpg" alt="">
+                      </a>
+                      <button class="absolute bottom-0 right-1 bg-blue-500 h-8 w-8 rounded-full text-white text-2xl font-semibold border-white flex justify-center items-center font-mono hover:bg-blue-700">+</button>
+                  </div>
+                  <a href="">You</a>
+              </li>
+              <li class="flex flex-col items-center space-y-1">
+                  <div class=" h-24 w-24 bg-gradient-to-tr from-yellow-400 to-red-500 p-1 rounded-full">
+                      <a  class="block bg-white p-1 rounded-full transform transition hover:-rotate-6">
+                          <img class="h-20 w-24 rounded-full object-fill" src="images/pexels-pixabay-35183.jpg" alt="">
+                      </a>
+                  </div>
+                  <a href="">Mohan</a>
+              </li>
+              <li class="flex flex-col items-center space-y-1">
+                  <div class="h-24 w-24 bg-gradient-to-tr from-yellow-400 to-red-500 p-1 rounded-full">
+                      <a  class="block bg-white p-1 rounded-full transform transition hover:-rotate-6">
+                          <img class="h-20 w-24 rounded-full object-fill" src="images/pexels-pixabay-35183.jpg" alt="">
+                      </a>
+                  </div>
+                  <a href="">Shyam</a>
+              </li>
+              <li class="flex flex-col items-center space-y-1">
+                  <div class=" h-24 w-24 bg-gradient-to-tr from-yellow-400 to-red-500 p-1 rounded-full">
+                      <a  class="block bg-white p-1 rounded-full transform transition hover:-rotate-6">
+                          <img class="h-20 w-24 rounded-full object-fill" src="images/pexels-pixabay-35183.jpg" alt="">
+                      </a>
+                  </div>
+                  <a href="">Ram</a>
+              </li>
+              <li class="flex flex-col items-center space-y-1">
+                  <div class="h-24 w-24 bg-gradient-to-tr from-yellow-400 to-red-500 p-1 rounded-full">
+                      <a  class="block bg-white p-1 rounded-full transform transition hover:-rotate-6">
+                          <img class="h-20 w-24 rounded-full object-fill" src="images/pexels-pixabay-35183.jpg" alt="">
+                      </a>
+                  </div>
+                  <a href="">Ram</a>
+              </li>
+              <li class="flex flex-col items-center space-y-1">
+                <div class=" h-24 w-24 bg-gradient-to-tr from-yellow-400 to-red-500 p-1 rounded-full">
+                    <a  class="block bg-white p-1 rounded-full transform transition hover:-rotate-6">
+                        <img class="h-20 w-24 rounded-full object-fill" src="images/pexels-pixabay-35183.jpg" alt="">
+                    </a>
+                </div>
+                <a href="">Mohan</a>
+            </li>
+            <li class="flex flex-col items-center space-y-1">
+                <div class="h-24 w-24 bg-gradient-to-tr from-yellow-400 to-red-500 p-1 rounded-full">
+                    <a  class="block bg-white p-1 rounded-full transform transition hover:-rotate-6">
+                        <img class="h-20 w-24 rounded-full object-fill" src="images/pexels-pixabay-35183.jpg" alt="">
+                    </a>
+                </div>
+                <a href="">Shyam</a>
+            </li>
+            <li class="flex flex-col items-center space-y-1">
+                <div class=" h-24 w-24 bg-gradient-to-tr from-yellow-400 to-red-500 p-1 rounded-full">
+                    <a  class="block bg-white p-1 rounded-full transform transition hover:-rotate-6">
+                        <img class="h-20 w-24 rounded-full object-fill" src="images/pexels-pixabay-35183.jpg" alt="">
+                    </a>
+                </div>
+                <a href="">Ram</a>
+            </li>
+            <li class="flex flex-col items-center space-y-1">
+                <div class="h-24 w-24 bg-gradient-to-tr from-yellow-400 to-red-500 p-1 rounded-full">
+                    <a  class="block bg-white p-1 rounded-full transform transition hover:-rotate-6">
+                        <img class="h-20 w-24 rounded-full object-fill" src="images/pexels-pixabay-35183.jpg" alt="">
+                    </a>
+                </div>
+                <a href="">Ram</a>
+            </li>
+            <li class="flex flex-col items-center space-y-1">
+              <div class=" h-24 w-24 bg-gradient-to-tr from-yellow-400 to-red-500 p-1 rounded-full">
+                  <a  class="block bg-white p-1 rounded-full transform transition hover:-rotate-6">
+                      <img class="h-20 w-24 rounded-full object-fill" src="images/pexels-pixabay-35183.jpg" alt="">
+                  </a>
+              </div>
+              <a href="">Mohan</a>
+          </li>
+          <li class="flex flex-col items-center space-y-1">
+              <div class="h-24 w-24 bg-gradient-to-tr from-yellow-400 to-red-500 p-1 rounded-full">
+                  <a  class="block bg-white p-1 rounded-full transform transition hover:-rotate-6">
+                      <img class="h-20 w-24 rounded-full object-fill" src="images/pexels-pixabay-35183.jpg" alt="">
+                  </a>
+              </div>
+              <a href="">Shyam</a>
+          </li>
+          <li class="flex flex-col items-center space-y-1">
+              <div class=" h-24 w-24 bg-gradient-to-tr from-yellow-400 to-red-500 p-1 rounded-full">
+                  <a  class="block bg-white p-1 rounded-full transform transition hover:-rotate-6">
+                      <img class="h-20 w-24 rounded-full object-fill" src="images/pexels-pixabay-35183.jpg" alt="">
+                  </a>
+              </div>
+              <a href="">Ram</a>
+          </li>
+          <li class="flex flex-col items-center space-y-1">
+              <div class="h-24 w-24 bg-gradient-to-tr from-yellow-400 to-red-500 p-1 rounded-full">
+                  <a  class="block bg-white p-1 rounded-full transform transition hover:-rotate-6">
+                      <img class="h-20 w-24 rounded-full object-fill" src="images/pexels-pixabay-35183.jpg" alt="">
+                  </a>
+              </div>
+              <a href="">Ram</a>
+          </li>
+              
+             
+              
+          </ul>
+           
+      
+          </section>
+      
+          <!-- Grid for the posts -->
+          <div class="w-full ">
+            <!-- Post 1 -->
+            <div class="bg-white my-7 border rounder-sm w-full">
+              <div class="flex items-center p-4">
+                  <div class="avatar mr-3">
+                      <div class="">
+                          <img class="rounded-full w-10 h-10" src="images/pexels-pixabay-35183.jpg" alt="">
+                      </div>
+                  </div>
+                  <p class="flex-1 text-sm font-semibold">Ram.  </p>
+                  <i class="fas fa-ellipsis-h fa-lg "></i>
+              </div>
+              <img class="w-full" src="images/feed1.jpeg" alt="">
+              <div class="flex justify-between p-4">
+                  <div class="flex space-x-4 item-center pt-3">
+                      <i class="fa-regular fa-heart fa-lg"></i>
+                      <i class="fa-regular fa-comment fa-flip-horizontal fa-lg"></i>
+                      <i class="fa-regular fa-paper-plane fa-lg"></i>
+                  </div>
+                  <i class="fa-regular fa-bookmark fa-lg pt-3"></i>
+              </div>
+              <div class="justify-between p-4">
+              <p class="px-4 truncate">
+                  <p class="font-semibold mb-1 text-sm">10 likes</p>
+                  <span class="font-semibold mr-1 text-sm">Ashu</span>Nice one
+                  
+              </p>
+              <div class="px-4 text-sm mb-1 text-gray-300 cursor-pointer">View all 4 comments</div>
+              <div class="px-4 flex justify-between">
+                  <div>
+                      <span class="font-semibold mr-1 text-sm">Ashu</span>Good
+                  </div>
+                  <i class="fa-regular fa-heart fa-2xs h-4 cursor-pointer pt-3 items-baseline"></i>
+              </div>
+              
+              <div class="px-4 flex justify-between">
+                  <div>
+                      <span class="font-semibold mr-1 text-sm">Ashu</span>Good
+                  </div>
+                  <i class="fa-regular fa-heart fa-2xs h-4 cursor-pointer pt-3  items-baseline"></i>
+              </div>
+              <div class="px-4 mt-2 text-gray-400 text-xs md-4">2 DAYS AGO</div>
+              <hr>
+              <form action="" class="flex items-center p-3">
+                  <i class="fa-regular fa-face-smile fa-lg cursor-pointer mr-2"></i>
+                  <input type="text" class="border-none flex-1 focus:ring-0 outline-none" placeholder="Add a comment">
+                  <button class="font-semibold text-blue-400">Post</button>
+
+              </form>
+              
+             
+          </div>
+          <div class="bg-white my-7 border rounder-sm">
+            <div class="flex items-center p-4">
+                <div class="avatar mr-3">
+                    <div class="">
+                        <img class="rounded-full w-10 h-10" src="images/pexels-pixabay-35183.jpg" alt="">
+                    </div>
+                </div>
+                <p class="flex-1 text-sm font-semibold">Shyam  </p>
+                <i class="fas fa-ellipsis-h fa-lg "></i>
+            </div>
+            <img class="w-full" src="images/feed2.jpeg" alt="">
+            <div class="flex justify-between p-4">
+                <div class="flex space-x-4 item-center pt-3">
+                    <i class="fa-regular fa-heart fa-lg"></i>
+                    <i class="fa-regular fa-comment fa-flip-horizontal fa-lg"></i>
+                    <i class="fa-regular fa-paper-plane fa-lg"></i>
+                </div>
+                <i class="fa-regular fa-bookmark fa-lg pt-3"></i>
+            </div>
+            <div class="justify-between p-4">
+            <p class="px-4 truncate">
+                <p class="font-semibold mb-1 text-sm">10 likes</p>
+                <span class="font-semibold mr-1 text-sm">Ashu</span>Nice one
+                
+            </p>
+            <div class="px-4 text-sm mb-1 text-gray-300 cursor-pointer">View all 4 comments</div>
+            <div class="px-4 flex justify-between">
+                <div>
+                    <span class="font-semibold mr-1 text-sm">Ashu</span>Good
+                </div>
+                <i class="fa-regular fa-heart fa-2xs h-4 cursor-pointer pt-3 items-baseline"></i>
+            </div>
+            
+            <div class="px-4 flex justify-between">
+                <div>
+                    <span class="font-semibold mr-1 text-sm">Ashu</span>Good
+                </div>
+                <i class="fa-regular fa-heart fa-2xs h-4 cursor-pointer pt-3  items-baseline"></i>
+            </div>
+            <div class="px-4 mt-2 text-gray-400 text-xs md-4">2 DAYS AGO</div>
+            <hr>
+            <form action="" class="flex items-center p-3">
+                <i class="fa-regular fa-face-smile fa-lg cursor-pointer mr-2"></i>
+                <input type="text" class="border-none flex-1 focus:ring-0 outline-none" placeholder="Add a comment">
+                <button class="font-semibold text-blue-400">Post</button>
+
+            </form>
+            
+           
+        </div>
+           
+            <!-- Add more posts here -->
+      
+        </main>
+      
+        <!-- Navigation section on the left side -->
+        
+
+
+
+<nav class="bg-white pr-0 shadow-md min-h-screen right-0 col-span-2 col-start-11">
+    <section class="flex-grow p-4">
+  
+        <div class="flex item-center justify-between mt-10">
+            <div class="avatar">
+                <div>
+                    <img class="rounded-full w-14 h-14" src="images/pexels-pixabay-35183.jpg" alt="">
+                </div>
+            </div>
+            <div class="flex-1 mx-4">
+                <h2 class="font-bold">ashu</h2>
+                <h3 class="text-sm text-gray-400">Welcome to Instagram</h3>
+            </div>
+            <button class="text-blue-400 text-sm font-semibold">
+                Switch
+            </button>
+        </div>
+        <div class="mt-4">
+            <div class="flex justify-between text-sm mb-5">
+                <h3 class="text-sm font-semibold text-gray-400">Suggestions</h3>
+                <button class="text-gray-600 font-semibold">See All</button>
+            </div>
+            <div class="flex items center justify-between mt-3">
+                <div class="avatar">
+                    <div>
+                        <img class="rounded-full w-8 h-8" src="images/pexels-pixabay-35183.jpg" alt="">
+                    </div>
+                </div>
+                <div class="flex-1 ml-4">
+                    <h2 class="font-semibold text-sm">Ram</h2>
+                    <h3 class="text-xs text-gray-400">New to Instagram</h3>
+                </div>
+                <button class="text-blue-400 text-xs font-bold">Follow</button>
+            </div>
+            <div class="flex items center justify-between mt-3">
+                <div class="avatar">
+                    <div>
+                        <img class="rounded-full w-8 h-8" src="images/pexels-pixabay-35183.jpg" alt="">
+                    </div>
+                </div>
+                <div class="flex-1 ml-4">
+                    <h2 class="font-semibold text-sm">Ram</h2>
+                    <h3 class="text-xs text-gray-400">New to Instagram</h3>
+                </div>
+                <button class="text-blue-400 text-xs font-bold">Follow</button>
+            </div>
+            <div class="flex items center justify-between mt-3">
+                <div class="avatar">
+                    <div>
+                        <img class="rounded-full w-8 h-8" src="images/pexels-pixabay-35183.jpg" alt="">
+                    </div>
+                </div>
+                <div class="flex-1 ml-4">
+                    <h2 class="font-semibold text-sm">Ram</h2>
+                    <h3 class="text-xs text-gray-400">New to Instagram</h3>
+                </div>
+                <button class="text-blue-400 text-xs font-bold">Follow</button>
+            </div>
+            <div class="flex items center justify-between mt-3">
+                <div class="avatar">
+                    <div>
+                        <img class="rounded-full w-8 h-8" src="images/pexels-pixabay-35183.jpg" alt="">
+                    </div>
+                </div>
+                <div class="flex-1 ml-4">
+                    <h2 class="font-semibold text-sm">Ram</h2>
+                    <h3 class="text-xs text-gray-400">New to Instagram</h3>
+                </div>
+                <button class="text-blue-400 text-xs font-bold">Follow</button>
+            </div>
+            <div class="flex items center justify-between mt-3">
+                <div class="avatar">
+                    <div>
+                        <img class="rounded-full w-8 h-8" src="images/pexels-pixabay-35183.jpg" alt="">
+                    </div>
+                </div>
+                <div class="flex-1 ml-4">
+                    <h2 class="font-semibold text-sm">Ram</h2>
+                    <h3 class="text-xs text-gray-400">New to Instagram</h3>
+                </div>
+                <button class="text-blue-400 text-xs font-bold">Follow</button>
+            </div>
+        </div>
+        <!-- Right sidebar content goes here -->
+    
+      </section>
+           
+</nav>
+      
+
+      </div>
+   
+    
+</body>
+</html>
